@@ -1,0 +1,42 @@
+# ⛪ Método São Bento - Criador de Flashcards (PWA)
+
+> **"Ora et labora et legere"** (Reza, trabalha e lê)
+
+O **Método São Bento** é um ecossistema minimalista e produtivo para criação de flashcards, projetado para estudantes que buscam alta performance e organização. Este projeto é um **PWA (Progressive Web App)**, o que significa que pode ser instalado no seu computador ou celular e funciona totalmente offline.
+
+
+
+## ✨ Funcionalidades
+
+- 🎨 **Layout Moderno (Neomorfismo):** Interface limpa baseada no painel de abas para separar criação e gestão.
+- 🌓 **Dark & Light Mode:** Troca de temas em tempo real para maior conforto visual.
+- 🖼️ **Suporte a Imagens:** Upload e pré-visualização instantânea de imagens nos cards.
+- 📑 **Tags Automáticas:** Exportação inteligente que organiza Matéria e Assunto como tags no Anki.
+- 📤 **Exportação/Importação:** Compatível com o formato `.txt` do Anki (UTF-8).
+- 📱 **PWA:** Instalável no Android/iOS e funciona offline via Service Workers.
+- 💾 **Persistência Local:** Seus dados são salvos no navegador (LocalStorage) sem necessidade de servidor.
+
+## 🚀 Como usar
+
+1. **Criar:** Preencha a matéria, o assunto e o conteúdo do card (frente e verso).
+2. **Visualizar:** Use a área de "Live Preview" para conferir o visual antes de salvar.
+3. **Exportar:** Na aba "Biblioteca", clique em "Exportar ANKI" para gerar o arquivo de integração.
+4. **Importar no Anki:** No Anki Desktop, vá em `Arquivo > Importar` e selecione o arquivo gerado.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5 & CSS3** (Variáveis CSS e Grid Layout)
+- **JavaScript Moderno** (ES6+, LocalStorage, FileReader API)
+- **Service Workers & Manifest** (Tecnologia PWA)
+- **Python** (Script de automação e build do projeto)
+
+## 📦 Estrutura de Arquivos
+
+```text
+/
+├── index.html        # Estrutura principal
+├── style.css         # Estilização e Temas
+├── script.js        # Lógica do app e Banco de Dados Local
+├── manifest.json     # Configurações do PWA
+├── sw.js            # Service Worker (Offline)
+└── /assets           # Imagens e ícones
